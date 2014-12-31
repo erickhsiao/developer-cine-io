@@ -10,7 +10,7 @@ Peer is an API-driven live video-conferencing platform.
 [Read the docs.](/docs/peer.html)
 
 
-## Broadcast
+## Broadcast API
 
 Broadcast is an API-driven live video-streaming platform.
 
