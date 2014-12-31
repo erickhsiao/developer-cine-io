@@ -5371,4 +5371,20 @@ button.close {
 html, body {
   height: 100%; }
 
+* {
+  font-family: "Varela Round", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.navbar-brand {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  .navbar-brand img {
+    display: inline-block;
+    height: 37.5px; }
+  .navbar-brand div {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    color: #fff; }
+
 /*# sourceMappingURL=bundle.css.map */

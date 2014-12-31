@@ -1,3 +1,23 @@
 html, body {
   height: 100%;
 }
+
+* {
+  font-family: "Varela Round", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar-brand {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  img {
+    display: inline-block;
+    height: $navbar-height * 0.75;
+  }
+  div {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    color: $navbar-inverse-link-hover-color;
+  }
+}
