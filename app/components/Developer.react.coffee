@@ -5,7 +5,14 @@ Bootstrap = require('react-bootstrap')
 
 module.exports = React.createClass({
 
+  getInitialState: ->
+    return {
+      document: "/docs/peer.html"
+    }
+
   render: ->
+    console.log "loading #{@state.document}"
+
     return (
       <div id="developer">
 
@@ -18,7 +25,7 @@ module.exports = React.createClass({
           </div>
         </nav>
 
-        <iframe src="/docs/main.html" />
+        <iframe src={@state.document} />
 
       </div>
     )

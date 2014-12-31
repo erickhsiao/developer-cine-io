@@ -37,7 +37,8 @@ module.exports = (grunt) ->
     aglio:
       docs:
         files:
-          "public/docs/main.html": ["docs/**/*.md"]
+          "public/docs/broadcast.html": ["docs/broadcast.md"]
+          "public/docs/peer.html": ["docs/peer.md"]
         options:
           # Not sure why I need the full path here. Weird.
           theme: "node_modules/aglio/templates/flatly-collapsible"
