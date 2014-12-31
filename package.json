@@ -1,0 +1,45 @@
+{
+  "author": "BML Ventures Team",
+  "name": "developer.cine.io",
+  "domains": [
+    "developer.cine.io"
+  ],
+  "version": "0.1.0",
+  "description": "cine.io developer documentation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cine-io/developer.git"
+  },
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "express": "^4.10.6",
+    "flux": "^2.0.1",
+    "grunt-contrib-concat": "^0.5.0",
+    "jade": "^1.8.2",
+    "keymirror": "^0.1.1",
+    "lodash": "^2.4.1",
+    "morgan": "^1.5.0",
+    "node-cjsx": "^0.1.2",
+    "object-assign": "^2.0.0",
+    "react": "^0.12.2",
+    "react-bootstrap": "^0.13.0"
+  },
+  "devDependencies": {
+    "browserify": "^8.0.2",
+    "coffee-react": "^2.1.2",
+    "coffee-reactify": "^2.1.0",
+    "connect-browserify": "^3.2.1",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^3.2.1",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.7.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-nodemon": "^0.3.0"
+  },
+  "license": "Copyrighted / All rights reserved.",
+  "engines": {
+    "node": "0.10.32"
+  },
+  "private": true
+}
