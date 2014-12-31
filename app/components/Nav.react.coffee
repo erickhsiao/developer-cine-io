@@ -10,7 +10,7 @@ module.exports = React.createClass({
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img alt="cine.io" src="http://www.cine.io/images/cine-logomark.png" />
-            <div>Developers</div>
+            <div>Developer Documentation</div>
           </a>
         </div>
       </nav>
