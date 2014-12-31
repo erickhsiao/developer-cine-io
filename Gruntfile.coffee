@@ -34,13 +34,24 @@ module.exports = (grunt) ->
         files:
           'public/js/bundle.js': ['.compiled/bundle.js']
 
+    aglio:
+      docs:
+        files:
+          "public/docs/main.html": ["docs/**/*.md"]
+        options:
+          theme: "node_modules/aglio/templates/flatly-collapsible"
+          seperator: "\n"
+
     watch:
       app:
         files: ["app/**/*", "Gruntfile.coffee"]
         tasks: ["browserify", "concat", "uglify"]
       scss:
-        files: ["scss/**/*"]
+        files: ["scss/**/*", "Gruntfile.coffee"]
         tasks: ["sass"]
+      aglio:
+        files: ["docs/**/*.jade", "docs/**/*.md", "Gruntfile.coffee"]
+        tasks: ["aglio"]
 
     nodemon:
       dev:
@@ -62,12 +73,14 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-watch"
   grunt.loadNpmTasks "grunt-nodemon"
   grunt.loadNpmTasks "grunt-concurrent"
+  grunt.loadNpmTasks "grunt-aglio"
 
   grunt.registerTask "compile", [
     "sass"
     "browserify"
     "concat"
     "uglify"
+    "aglio"
   ]
   grunt.registerTask "default", [
     "compile"

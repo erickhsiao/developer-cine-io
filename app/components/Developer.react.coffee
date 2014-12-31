@@ -8,6 +8,7 @@ module.exports = React.createClass({
   render: ->
     return (
       <div id="developer">
+
         <nav className="navbar navbar-inverse navbar-fixed-top">
           <div className="container-fluid">
             <a className="navbar-brand" href="/">
@@ -16,6 +17,9 @@ module.exports = React.createClass({
             </a>
           </div>
         </nav>
+
+        <iframe src="/docs/main.html" />
+
       </div>
     )
 
