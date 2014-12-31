@@ -1,32 +1,23 @@
 # @cjsx React.DOM
 
 React = require('react')
-Bootstrap = require('react-bootstrap')
+Nav = require('./Nav.react')
+Document = require('./Document.react')
 
 module.exports = React.createClass({
 
   getInitialState: ->
     return {
-      document: "/docs/peer.html"
+      docPath: "/docs/peer.html"
     }
 
   render: ->
-    console.log "loading #{@state.document}"
+    console.log "loading #{@state.docPath}"
 
     return (
       <div id="developer">
-
-        <nav className="navbar navbar-inverse navbar-fixed-top">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="/">
-              <img alt="cine.io" src="http://www.cine.io/images/cine-logomark.png" />
-              <div>Developers</div>
-            </a>
-          </div>
-        </nav>
-
-        <iframe src={@state.document} />
-
+        <Nav />
+        <Document path={@state.docPath} />
       </div>
     )
 
