@@ -22,6 +22,9 @@ app.set('view engine', 'jade')
 app.get '', (req, res)->
   res.render('index')
 
+app.get '/health', (req, res)->
+  res.status(200).send("OK")
+
 # in development, serve-up the bundle.js directly so we get source maps
 if development
   browserify  = require("connect-browserify")
