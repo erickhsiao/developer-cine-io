@@ -1,4 +1,5 @@
 process.env.NODE_ENV ||= "development"
+require('newrelic') if process.env.NODE_ENV == 'production'
 path = require("path")
 express = require("express")
 
