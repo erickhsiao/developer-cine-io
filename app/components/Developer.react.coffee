@@ -4,11 +4,19 @@ React = require('react')
 Nav = require('./Nav.react')
 Document = require('./Document.react')
 
+getInitialDoc = ->
+  switch window.location.pathname
+    when '/peer'
+      return "/docs/peer.html"
+    when '/broadcast'
+      return "/docs/broadcast.html"
+    else
+      return "/docs/index.html"
 module.exports = React.createClass({
 
   getInitialState: ->
     return {
-      docPath: "/docs/index.html"
+      docPath: getInitialDoc()
     }
 
   render: ->

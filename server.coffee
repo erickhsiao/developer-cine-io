@@ -22,6 +22,12 @@ app.set('view engine', 'jade')
 app.get '', (req, res)->
   res.render('index')
 
+app.get '/peer', (req, res)->
+  res.render('index')
+
+app.get '/broadcast', (req, res)->
+  res.render('index')
+
 app.get '/health', (req, res)->
   res.status(200).send("OK")
 
