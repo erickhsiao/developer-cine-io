@@ -10,8 +10,12 @@
     "type": "git",
     "url": "https://github.com/cine-io/developer.git"
   },
+  "scripts": {
+    "test": "coffeelint app/actions/ app/dispatcher/ app/constants/ server.coffee"
+  },
   "dependencies": {
     "coffee-script": "^1.8.0",
+    "coffeelint": "^1.8.1",
     "express": "^4.10.6",
     "flux": "^2.0.1",
     "grunt-contrib-concat": "^0.5.0",
