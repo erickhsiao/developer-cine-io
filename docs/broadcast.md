@@ -97,3 +97,6 @@ The cine.io Broadcast API is comprised of three main resource types:
 <!-- include(docs/_recording.md) -->
 
 
+<!-- include(docs/_usage.md) -->
+<!-- include(docs/usage/_project.md) -->
+<!-- include(docs/usage/_stream.md) -->
