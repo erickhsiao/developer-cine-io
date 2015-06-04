@@ -64,3 +64,28 @@ curl -X GET "https://www.cine.io/api/1/-/project?secretKey=PROJECT_SECRET_KEY"
        }
 
 
+### Create Project [POST]
+
+Create a new project in the account using the account master key `masterKey`.
+
+##### Example
+```bash
+curl -X POST "https://www.cine.io/api/1/-/project -d "masterKey=ACCOUNT_MASTER_KEY&name=Foo+Bar"
+```
+
++ Parameters
+
+    + masterKey (required, string `abcd1234abcd1234abcd1234abcd1234`) ... The `masterKey` associated with the account
+
++ Response 200 (application/json)
+
+    + Body
+
+       {
+          "id" : "abcd1234abcd1234abcd1234",
+          "streamsCount" : 0,
+          "name" : "Foo Bar",
+          "publicKey" : "abcd1234abcd1234abcd1234abcd1234",
+          "secretKey" : "abcd1234abcd1234abcd1234abcd1234",
+          "updatedAt" : "2015-06-04T04:29:00.989Z"
+       }
